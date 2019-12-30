@@ -15,9 +15,10 @@ app.set("port", process.env.PORT || 3000);
 app.use(morgan("dev"));
 
 app.get("/", (req: Request, res: Response) => {
+  const name: string = "elfin sanjaya";
   return res.status(200).json({
-    massage: "Welcome to Boilerplate TypeScript Elfin Sanjaya"
-  })
+    massage: `Welcome to Boilerplate TypeScript ${name}`
+  });
 });
 
 export default app;

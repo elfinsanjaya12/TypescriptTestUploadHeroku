@@ -8,7 +8,7 @@ const app_1 = __importDefault(require("./app"));
  * Start Express server.
  */
 const server = app_1.default.listen(app_1.default.get("port"), () => {
-    console.log("  App is running at http://localhost:%d in %s mode", app_1.default.get("port"), app_1.default.get("env"));
+    console.log("  App is running at http://localhost:%d in %s mode");
     console.log("  Press CTRL-C to stop\n");
 });
 exports.default = server;
